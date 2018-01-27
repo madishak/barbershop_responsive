@@ -51,6 +51,20 @@ blockquote, q {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PTSans-Narrow';
+    src: local('PTSans-Narrow');
+    src: url('fonts/PTSans-Narrow.svg') format('svg'),
+    url('fonts/PT_Sans-Narrow.eot') format('embedded-opentype'),
+    url('fonts/PTSans-Narrow.woff') format('woff'),
+    url('fonts/PT_Sans-Narrow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: PTSans-NarrowBold, Verdana, sans-serif ;
+}
 
 .header {
     background: black;
@@ -121,3 +135,165 @@ blockquote, q {
     content: url("icons/exit__active.png");
     padding-right: 13px;
 }
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 964px;
+}
+
+.slogan {
+    background: #353535 url("images/banner.png")   center  no-repeat;
+    background-size: cover;
+    width: 100%;
+    /*height: 720px;*/
+    padding-top: 56px;
+    /*height: 1349px;*/
+}
+
+.slogan__logo {
+    display: block;
+    margin: 0 auto;
+    background: transparent url("images/logo.png") center center no-repeat;
+    height: 153px;
+    width: 370px;
+    }
+
+.slogan__box {
+    width: 320px;
+    position: relative;
+}
+
+.slogan__box-inner {
+
+    display: flex;
+    margin-top: 278px;
+}
+
+.slogan__box-main {
+    background: white;
+    width: 343px;
+    box-sizing: inherit;
+}
+.slogan__box-main:before {
+    position: absolute;
+    left: -22px;
+    top: 37px;
+    content: url("icons/box-main__wing.png");
+}
+.slogan__box-main-title {
+    font-size: 40px;
+    line-height: 40px;
+    width: 203px;
+    padding: 37px 0 0 41px ;
+}
+
+.slogan__box-main-caption {
+    font-family: PTSans-Narrow, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    width: 210px;
+    padding: 54px 0 0 41px ;
+
+}
+
+.slogan__box-main-desc {
+    font-family: PTSans-Narrow, Verdana, sans-serif;
+    font-size: 20px;
+    color: #cacaca;
+    padding: 44px 0 32px 41px ;
+}
+.slogan__box-main-desc-symbol  {
+    font-size: 10px;
+    vertical-align: top;
+    margin-right: 6px;
+}
+
+.slogan__box-text1 {
+    background: #404040;
+}
+.slogan__box-text2 {
+    background: #353535;
+}
+
+.slogan__box-text3 {
+    background: #4e4e4e;
+
+}
+
+.slogan__box-text4 {
+    background: #404040;
+}
+
+.slogan__box-text-num {
+    font-size: 72px;
+    color: white;
+    padding: 33px 0 0 32px;
+}
+
+.slogan__box-text-num-symbol {
+    font-size: 16px;
+    vertical-align: top;
+    margin-left: 16px;
+
+}
+
+.slogan__box-text-desc {
+    font-family:  PTSans-Narrow, Verdana, sans-serif;
+    font-size: 20px;
+    color: #cfcdcb;
+    padding: 20px 0 29px 32px;
+}
+
+.slogan__paragraphs {
+    padding: 78px 0 43px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slogan__paragraphs-box {
+    width: 320px;
+}
+
+.slogan__paragraphs-box-lines {
+    height: 270px;
+    margin: auto 0;
+    border-left: 2px solid #4a4a4a;
+    border-right: 2px solid #4a4a4a;
+}
+
+.slogan__paragraphs-icon-scissors {
+    background: transparent url("icons/scissors.png") center center no-repeat;
+    height: 94px;
+    width: 320px;
+}
+
+.slogan__paragraphs-icon-chair {
+    background: transparent url("icons/chair.png") center center no-repeat;
+    height: 88px;
+    width: 320px;
+}
+
+.slogan__paragraphs-icon-expensive {
+    background: transparent url("icons/expensive.png") center center no-repeat;
+    height: 91px;
+    width: 320px;
+}
+
+.slogan__paragraphs__caption {
+    font-size: 30px;
+    color: #d7d4d2;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 34px 0 19px 0;
+}
+
+.slogan__paragraphs__text {
+    margin: 0 auto;
+    font-family: PTSans-Narrow, Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #f7f4f1;
+    width: 238px;
+}
+
