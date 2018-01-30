@@ -1,0 +1,59 @@
+@import "bootstrap.css";
+
+
+body {
+    font-family: PTSans-NarrowBold, Verdana, sans-serif ;
+}
+
+.carousel {
+    height: 300px;
+}
+
+
+.carousel-indicators li {
+    /*height: 10px;*/
+    /*width: 10px;*/
+    /*background: white;*/
+    /*border-radius: 50px;*/
+    background: transparent url("images/indicator.png") center center no-repeat;
+    width: 10px;
+    height: 10px;
+}
+.carousel-indicators .active {
+    /*background: none;*/
+    /*height: 12px;*/
+    /*width: 12px;*/
+    /*border: 2px solid white;*/
+    background: transparent url("images/indicator__active.png") center center no-repeat;
+    width: 10px;
+    height: 10px;
+
+}
+
+.carousel-inner {
+  margin: 0 auto;
+    width: 820px;
+    height: 160px;
+}
+
+.carousel-item {
+    width: 820px;
+    /*height: 160px;*/
+    /*border: 1px solid #e5ddd5;*/
+}
+
+.carousel-control-prev, .carousel-control-next {
+    border: 1px solid #e5ddd5;
+    width: 50px;
+    height: 160px;
+}
+
+
+.carousel-control-prev-icon  {
+    background: transparent url("images/prev.png") center center no-repeat;
+
+}
+.carousel-control-next-icon{
+    background: transparent url("images/next.png") center center no-repeat;
+}
+

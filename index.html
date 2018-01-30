@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/custom.css" rel="stylesheet">
+    <script src="bootstrap/js/jquery-3.1.1.js"></script>
+    <script src="bootstrap/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
 <header class="header">
@@ -27,13 +33,14 @@
 </header>
 
 <section class="slogan">
+    <!--<div class="slogan-bg">-->
     <a href="#" class="slogan__logo"></a>
 
     <div class="wrapper">
         <div class="slogan__box-inner">
             <div class="slogan__box">
                 <div class="slogan__box-main">
-                    <h1 class="slogan__box-main-title">Стрижка у нас это выгодно!</h1>
+                    <div class="slogan__box-main-title">Стрижка у нас это выгодно!</div>
                     <div class="slogan__box-main-caption">Мужская стрижка требует точного подхода. Обратимся к статистике:</div>
                     <div class="slogan__box-main-desc"> <span class="slogan__box-main-desc-symbol">&#10033;</span>&ndash; приведенные данные ложь</div>
                 </div>
@@ -79,9 +86,130 @@
         </div>
 
     </div>
+    <!--</div>-->
 </section>
 
+<section class="info">
+    <div class="wrapper">
 
+        <div class="info__news">
+            <div class="info__news-inner-top">
+                <div class="info__news-title">новости и акции</div>
+                <button type="button" class="info__news-button" value="show more">показать все</button>
+            </div>
+            <div class="info__news-container">
 
+                <div class="info__news-box">
+                    <div class="info__news-icon">
+                        <h1 class="info__news-icon-num">29</h1>
+                        <h4 class="info__news-icon-desc">сент</h4>
+                    </div>
+                    <div class="info__news-text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</div>
+                </div>
+
+                <div class="info__news-box">
+                    <div class="info__news-icon">
+                        <h1 class="info__news-icon-num">19</h1>
+                        <h4 class="info__news-icon-desc">сент</h4>
+                    </div>
+                    <div class="info__news-text">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!</div>
+                </div>
+
+                <div class="info__news-box">
+                    <div class="info__news-icon">
+                        <h1 class="info__news-icon-num">9</h1>
+                        <h4 class="info__news-icon-desc">сент</h4>
+                    </div>
+                    <div class="info__news-text">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="info__line"></div>
+
+    <div class="wrapper">
+        <div class="info__reviews">
+            <div class="info__reviews-inner-top">
+                <div class="info__reviews-title">отзывы о нас</div>
+                <button class="info__reviews-button" value="show more">оставить свой</button>
+            </div>
+            <div class="info__reviews-inner ">
+
+                    <div id="review" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#review" data-slide-to="0" class="active"></li>
+                            <li data-target="#review" data-slide-to="1"></li>
+                            <li data-target="#review" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/man.png" class="info__review-photo">
+                                <div class="info__review-slider-caption">
+                                <div class="info__review-desc">Tревис Баркер</div>
+                                <div class="info__review-text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                    чтобы было видно новую татуировку!</div>
+                                </div>
+                                </div>
+                            <div class="carousel-item">
+                                <img src="images/man.png" class="info__review-photo">
+                                <div class="info__review-slider-caption">
+                                    <div class="info__review-desc">Tревис Баркер</div>
+                                    <div class="info__review-text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                        чтобы было видно новую татуировку!</div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/man.png" class="info__review-photo">
+                                <div class="info__review-slider-caption">
+                                    <div class="info__review-desc">Tревис Баркер</div>
+                                    <div class="info__review-text">Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+                                        чтобы было видно новую татуировку!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#review" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#review" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer">
+    <div class="wrapper">
+    <div class="footer__inner">
+        <div class="footer__text">
+            <h4 class="footer__title">барбершоп бородинский</h4>
+            <p class="footer__caption"> г. Cанкт-петербург, ул. Большая Конюшенная, 19/8</p>
+            <p class="footer__caption">Tел.: +7 (812) 555-66-66</p>
+        </div>
+
+        <div class="sociables">
+            <div class="sociables__slogan">Давайте дружить!</div>
+            <div class="sociables__container">
+                <a href="#" class="sociables-vk"></a>
+                <a href="#" class="sociables-facebook"></a>
+                <a href="#" class="sociables-insta"></a>
+            </div>
+        </div>
+
+        <div class="footer__copy">
+            <div class="footer__copy-title">Разработано:</div>
+            <a class="footer__copy-link" href="#">html academy</a>
+        </div>
+    </div>
+
+    </div>
+</footer>
 </body>
 </html>
