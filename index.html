@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/custom.css" rel="stylesheet">
     <script src="bootstrap/js/jquery-3.1.1.js"></script>
     <script src="bootstrap/js/jquery-migrate-1.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="function.js"></script>
 </head>
-<body>
+<body class="body-home">
 <header class="header">
 
     <div class="header__inner">
@@ -28,65 +30,141 @@
             </ul>
         </div>
 
+        <div class="header__auth-tablet-icon"></div>
         <div class="header__auth"><a href="#" class="header__auth-link">вход</a></div>
     </div>
 </header>
 
 <section class="slogan">
-    <!--<div class="slogan-bg">-->
     <a href="#" class="slogan__logo"></a>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__open">
+        <div class="mobile-menu__title">главная</div>
+        <button type="button" class="mobile-menu__button-open"></button>
+        </div>
+
+        <div class="mobile-menu__close">
+            <button type="button" class="mobile-menu__button-close"></button>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">главная</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">наши работы</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">записаться</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">контакты</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">html academy</a></li>
+                <li class="mobile-menu__auth-item"><a href="#" class="mobile-menu__auth-link">вход</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class="wrapper">
         <div class="slogan__box-inner">
-            <div class="slogan__box">
-                <div class="slogan__box-main">
-                    <div class="slogan__box-main-title">Стрижка у нас это выгодно!</div>
+            <div class="slogan__box-left">
+
+                    <div class="slogan__box-main-top">
+                        <div class="slogan__box-main-title">Стрижка у нас это выгодно!</div>
+                        <div class="slogan__box-main-desc-tablet"> <span class="slogan__box-main-desc-symbol">&#10033;</span>&ndash; приведенные данные ложь</div>
+                    </div>
+                    <div class="slogan__box-main-bottom">
                     <div class="slogan__box-main-caption">Мужская стрижка требует точного подхода. Обратимся к статистике:</div>
                     <div class="slogan__box-main-desc"> <span class="slogan__box-main-desc-symbol">&#10033;</span>&ndash; приведенные данные ложь</div>
-                </div>
+                    </div>
+
             </div>
-            <div class="slogan__box">
+            <div class="slogan__box-right">
+                <div class="slogan__box-right-top">
                 <div class="slogan__box-text1">
                     <div class="slogan__box-text-num">1 500<span class="slogan__box-text-num-symbol">&#10033;</span></div>
                     <div class="slogan__box-text-desc">рублей вложений</div>
                 </div>
                 <div class="slogan__box-text2">
-                    <div class="slogan__box-text-num">90 000</div>
-                    <div class="slogan__box-text-desc">подстриженных волос</div>
-                </div>
-            </div>
-            <div class="slogan__box">
-                <div class="slogan__box-text3">
                     <div class="slogan__box-text-num">7 200</div>
                     <div class="slogan__box-text-desc">секунд времени мастера</div>
+                </div>
+                </div>
+
+                <div class="slogan__box-right-bottom">
+                <div class="slogan__box-text3">
+                    <div class="slogan__box-text-num">90 000</div>
+                    <div class="slogan__box-text-desc">подстриженных волос</div>
                 </div>
                 <div class="slogan__box-text4">
                     <div class="slogan__box-text-num">500 000<span class="slogan__box-text-num-symbol">&#10033;</span></div>
                     <div class="slogan__box-text-desc">лайков и комплиментов</div>
                 </div>
+                </div>
             </div>
         </div>
+
+        <div class="slogan__box-desc-mobile"> <span class="slogan__box-main-desc-symbol">&#10033;</span>&ndash; приведенные данные ложь</div>
 
         <div class="slogan__paragraphs">
             <div class="slogan__paragraphs-box">
                 <div class="slogan__paragraphs-icon-scissors"></div>
+                <div class="slogan__paragraphs-inner">
                 <div class="slogan__paragraphs__caption">быстро</div>
                 <div class="slogan__paragraphs__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</div>
-            </div>
-            <div class="slogan__paragraphs-box slogan__paragraphs-box-lines">
+                </div>
+                </div>
+            <div class="slogan__paragraphs-box">
                 <div class="slogan__paragraphs-icon-chair"></div>
+                <div class="slogan__paragraphs-inner">
                 <div class="slogan__paragraphs__caption">круто</div>
                 <div class="slogan__paragraphs__text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</div>
+                </div>
             </div>
             <div class="slogan__paragraphs-box">
                 <div class="slogan__paragraphs-icon-expensive"></div>
+                <div class="slogan__paragraphs-inner">
                 <div class="slogan__paragraphs__caption">дорого</div>
                 <div class="slogan__paragraphs__text">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</div>
+                </div>
+                </div>
+        </div>
+
+        <div class="slogan__paragraphs-mobile">
+            <div id="slogan" class="carousel slide " data-ride="carousel">
+                <ol class="carousel-indicators slogan__paragraphs-indicators">
+                    <li data-target="#slogan" data-slide-to="0" class="active slogan__paragraphs-indicators-item"></li>
+                    <li data-target="#slogan" data-slide-to="1" class=" slogan__paragraphs-indicators-item"></li>
+                    <li data-target="#slogan" data-slide-to="2" class=" slogan__paragraphs-indicators-item"></li>
+                </ol>
+                <div class="carousel-inner mobile-slider">
+                    <div class="carousel-item center active">
+                        <div class="slogan__paragraphs-box">
+                            <div class="slogan__paragraphs-icon-scissors"></div>
+                            <div class="slogan__paragraphs-inner">
+                                <div class="slogan__paragraphs__caption">быстро</div>
+                                <div class="slogan__paragraphs__text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item center">
+                        <div class="slogan__paragraphs-box">
+                            <div class="slogan__paragraphs-icon-chair"></div>
+                            <div class="slogan__paragraphs-inner">
+                                <div class="slogan__paragraphs__caption">круто</div>
+                                <div class="slogan__paragraphs__text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item center">
+                        <div class="slogan__paragraphs-box">
+                            <div class="slogan__paragraphs-icon-expensive"></div>
+                            <div class="slogan__paragraphs-inner">
+                                <div class="slogan__paragraphs__caption">дорого</div>
+                                <div class="slogan__paragraphs__text">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div>
-    <!--</div>-->
+
+
+
 </section>
 
 <section class="info">
@@ -124,7 +202,9 @@
                 </div>
 
             </div>
+            <button type="button" class="info__news-button-mobile" value="show more">показать все</button>
         </div>
+
     </div>
 
         <div class="info__line"></div>
@@ -138,12 +218,12 @@
             <div class="info__reviews-inner ">
 
                     <div id="review" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
+                        <ol class="carousel-indicators carousel-indicators-tablet ">
                             <li data-target="#review" data-slide-to="0" class="active"></li>
                             <li data-target="#review" data-slide-to="1"></li>
                             <li data-target="#review" data-slide-to="2"></li>
                         </ol>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner carousel-inner__frame">
                             <div class="carousel-item active">
                                 <img src="images/man.png" class="info__review-photo">
                                 <div class="info__review-slider-caption">
@@ -183,6 +263,7 @@
         </div>
     </div>
 
+
 </section>
 
 <footer class="footer">
@@ -191,7 +272,7 @@
         <div class="footer__text">
             <h4 class="footer__title">барбершоп бородинский</h4>
             <p class="footer__caption"> г. Cанкт-петербург, ул. Большая Конюшенная, 19/8</p>
-            <p class="footer__caption">Tел.: +7 (812) 555-66-66</p>
+            <p class="footer__caption footer__caption-mobile"><span class="footer__caption-text">Tел.:</span> +7 (812) 555-66-66</p>
         </div>
 
         <div class="sociables">
@@ -207,8 +288,17 @@
             <div class="footer__copy-title">Разработано:</div>
             <a class="footer__copy-link" href="#">html academy</a>
         </div>
+
+
     </div>
 
+        <div class="sociables-mobile">
+            <div class="sociables__container">
+                <a href="#" class="sociables-mobile__vk"></a>
+                <a href="#" class="sociables-mobile__facebook"></a>
+                <a href="#" class="sociables-mobile__insta"></a>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
