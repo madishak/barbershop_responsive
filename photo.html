@@ -1,10 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/custom.css" rel="stylesheet">
+    <script src="bootstrap/js/jquery-3.1.1.js"></script>
+    <script src="bootstrap/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="function.js"></script>
 </head>
-<body>
-$END$
+<body class="body">
+<header class="header">
+
+    <div class="header__inner">
+
+
+        <div class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">главная</a></li>
+                <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">наши работы</a></li>
+                <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">записаться</a></li>
+                <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">контакты</a></li>
+                <li class="header__menu-list-item"><a href="#" class="header__menu-list-link">html academy</a></li>
+            </ul>
+        </div>
+
+        <div class="header__auth-tablet-icon"></div>
+        <div class="header__auth"><a href="#" class="header__auth-link">вход</a></div>
+    </div>
+</header>
+
+<section class="slogan">
+    <a href="#" class="slogan__logo"></a>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__open">
+            <div class="mobile-menu__title">главная</div>
+            <button type="button" class="mobile-menu__button-open"></button>
+        </div>
+
+        <div class="mobile-menu__close">
+            <button type="button" class="mobile-menu__button-close"></button>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">главная</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">наши работы</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">записаться</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">контакты</a></li>
+                <li class="mobile-menu__list-item"><a href="#" class="mobile-menu__list-link">html academy</a></li>
+                <li class="mobile-menu__auth-item"><a href="#" class="mobile-menu__auth-link">вход</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__inner">
+            <div class="footer__text">
+                <h4 class="footer__title">барбершоп бородинский</h4>
+                <p class="footer__caption"> г. Cанкт-петербург, ул. Большая Конюшенная, 19/8</p>
+                <p class="footer__caption footer__caption-mobile"><span class="footer__caption-text">Tел.:</span> +7 (812) 555-66-66</p>
+            </div>
+
+            <div class="sociables">
+                <div class="sociables__slogan">Давайте дружить!</div>
+                <div class="sociables__container">
+                    <a href="#" class="sociables-vk"></a>
+                    <a href="#" class="sociables-facebook"></a>
+                    <a href="#" class="sociables-insta"></a>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <div class="footer__copy-title">Разработано:</div>
+                <a class="footer__copy-link" href="#">html academy</a>
+            </div>
+
+
+        </div>
+
+        <div class="sociables-mobile">
+            <div class="sociables__container">
+                <a href="#" class="sociables-mobile__vk"></a>
+                <a href="#" class="sociables-mobile__facebook"></a>
+                <a href="#" class="sociables-mobile__insta"></a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
